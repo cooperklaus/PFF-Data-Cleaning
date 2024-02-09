@@ -198,4 +198,4 @@ clean_teams_pff_to_cfbd <- function(x){x <- case_match(x,
                                                        'WINGAT'     ~ 'Wingate',
                                                        'WISCSP'     ~ 'Wisconsin-Stevens Point',
                                                        'YNGTWON ST' ~ 'Youngstown State',
-                                                       TRUE ~ str_to_title(x))}
+                                                       .default = str_to_title(x))}
